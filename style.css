@@ -1,0 +1,247 @@
+*{
+font-family: 'Bebas Neue', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+margin: 0;
+padding: 0;
+
+
+
+
+
+
+
+}
+
+.container{
+    background: #eee;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.header__img{
+width: 250px;
+}
+
+.header__nav{
+    width: 100%;
+    height: 40px;
+    background: #ddd;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    display: flex;
+    line-height: 40px;
+    justify-content: space-evenly;
+
+}
+
+.header__links{
+    font-weight: bold;
+    color: #111;
+    text-decoration: none;
+    transition: .7s;
+}
+.header__links:hover{
+    font-size: 22px;
+    font-weight: #000;
+    color: #111;
+    text-decoration: none;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 60px;
+    gap: 20px;
+    margin-bottom: 60px;
+   place-items: center;
+}
+.article__cards{
+    
+    border: 5px solid #000;
+    background:#ddd;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    transition: .7s;
+   
+    
+}
+.article__cards:hover{
+    
+  
+    width: 320px;
+    height: 420px;
+    
+}
+.article__cards img{
+    width: 100%;
+    height: 200px;
+}
+.article__title{
+    font-size: 20px;
+    text-align: center;
+    font-weight:bolder;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    
+}
+.article__subtitle{
+    margin: 5px 10px;
+}
+
+.publicity__title{
+    border-bottom: 1px solid #000;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.publicity{
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom: 110px;
+    height: 500px;
+}
+
+.publicity__img{
+    
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.publicity__text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #222;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.publicity__img img{
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+
+}
+.publicity__button{
+    border: 5px solid black;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: #000;
+} 
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #bbb;
+}
+.footer__text{
+    text-align: center;
+    line-height: 80px;
+}
+
+@media screen and (max-width:400px) {
+ 
+    .container{
+        background: #eee;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        
+    }
+    .nav__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .article{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-top: 60px;
+        gap: 50px;
+        margin-bottom: 60px;
+       place-items: center;
+    }
+
+    .article__title{
+        font-size: 30px;
+        text-align: center;
+        font-weight:bolder;
+        border-bottom: 1px solid #000;
+        margin-bottom: 5px;
+        
+    }
+    .article__subtitle{
+        font-size: 15px;
+        margin: 5px 10px;
+    }
+
+    .publicity__title{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 1px solid #000;
+        font-size: 20px;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+
+    
+    .publicity{
+        
+        margin: 0 auto;
+        width: auto;
+        margin-bottom: 110px;
+        height: 500px;
+    }
+    .publicity__img img{
+        display: flex;
+       
+        opacity: .8;
+        width: 100%;
+        height: 100%;
+    
+    }
+   
+    .publicity__text{
+        font-weight: bold;
+        font-size: 25px;
+        color: #222;
+        position: absolute;
+        left: 1%;
+        top: 20%;
+       
+    }
+    .publicity__button{
+        border: 2px solid black;
+        padding: 1px 5px;
+        text-decoration: none;
+        color: #000;
+    } 
+ 
+    
+
+
+}
